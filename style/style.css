@@ -13,7 +13,7 @@ main{
     width: 100%;
     background-color: hsl(30, 38%, 92%) ;
 }
-
+/* main */
 
 
 article.parfum{
@@ -23,7 +23,8 @@ article.parfum{
     margin: 0 auto;
     position: relative;
 }
-.parfum-wraper{
+/* article */
+.parfum-container{
     max-width: 638px;
     width: 100%;
     position: absolute;
@@ -32,11 +33,13 @@ article.parfum{
     transform: translate(-50%, -50%);
     padding: 2%;
 }
-.parfum-container{
+/* parfum container */
+.parfum-wraper{
     width: 100%;
     display: flex;
     
 }
+/* parfum wraper */
 
 section.product-img{
     width: 100%;
@@ -45,12 +48,14 @@ section.product-img{
     background-size: cover;
     border-radius:   10px 0 0 10px ;
 }
+/* product img */
 section.product-information{
     width: 100%;
     height: 100%;
     background-color: rgb(255, 255, 255);
     border-radius:  0 10px 10px 0;
 }
+/* product informations */
 .information-wraper{
     width: 100%;
     padding: 5%;
@@ -70,12 +75,14 @@ section.product-information{
     height: 100%;
     line-height: 30px;
 }
+/* information h2 */
 .product-information p{
     margin:10% 0 ;
     width: 90%;
     color:hsl(228, 12%, 48%);
     line-height: 23px;
 }
+/* information paragraph */
 .product-information .price span:nth-of-type(1){
     color: rgb(53, 133, 108);
     font-size: 28px;
@@ -83,6 +90,7 @@ section.product-information{
     font-family: 'Fraunces', sans-serif;
     margin-right: 15px;
 }
+/* information prices */
 .product-information .price{
     display: flex;
     align-items: center;
@@ -108,9 +116,11 @@ section.product-information{
     
     
 }
+/* information button */
 .product-information div button:hover{
 background-color: hsl(158, 36%, 22%);
 }
+/* end */
 @media  screen and (max-width:375px) {
     main{
         padding: 2%;
@@ -118,11 +128,11 @@ background-color: hsl(158, 36%, 22%);
     .attribution{
        display: none;
     }
-    .parfum-container{
+    .parfum-wraper{
         display: flex;
         flex-direction: column;
     }
-    .parfum-wraper{
+    .parfum-container{
         height: auto;
         max-width: 638px;
         width: 100%;
